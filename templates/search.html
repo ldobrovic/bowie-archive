@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="{{ url_for('static', filename = 'search.js') }}"></script>
+
+<script>
+    let titles = {{titles|tojson}}
+    let hits = {{hits|tojson}}
+    let desc = {{desc|tojson}}
+    let search_term = {{search_term|tojson}}
+</script>
+
+<div id = "search_container">
+    <br><br>
+    <div id="search_header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="titles_res">
+    
+                    </div>
+                    <br>
+                    <div id="desc_res">
+    
+                    </div>
+                </div>
+    
+                <div class="col-md-6">
+                    <div id="hits_res">
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

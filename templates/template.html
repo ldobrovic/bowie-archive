@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'template.js') }}"></script>
+
+<script>
+    let data = {{data|tojson}} 
+</script>
+
+<div class="view_container">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="view_header">
+                    <div>
+                        <div class="view_title">
+                            {{data.title}}
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="view_rating">
+                            <div class="view_rating_title">
+                                Rating
+                            </div>
+                            <div class="view_rating_num">
+                                {{data.rating}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="view_recommended">
+                            <div class="view_recommended_title">
+                                Recommended Songs
+                            </div>
+                            {% for hit in data.hits %}
+                                <div class="view_recommended_item">
+                                    {{hit}}
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="view_year">
+                            <div class="view_year_title">
+                                Year
+                            </div>
+                            <div class="view_year_num">
+                                {{data.year}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="{{data.image}}" alt="Album cover for {{data.title}}" class="view_img">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="view_description">
+                    {{data.description}}
+                </div>
+                <div id="arrows">
+                    Navigate to:
+                </div>
+                <br>
+                <a href="/edit/{{data.id}}" id="view_edit_link"><u>Edit this entry</u></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'welcome.js') }}"></script>
+
+<script>
+    let albums = {{albums|tojson}}
+</script>
+
+<div id="container">
+    <div id="welcome_cont">
+        <div class="row" id="welcome_hero">
+            <div class="col-md-12">
+                <div id="welcome_header">
+                    Welcome to the 70s Bowie Wiki
+                </div>
+                <div id="welcome_blurb">
+                    Want to explore the music of one of the most innovative and prolific artists of the 1970s?
+                    Then you're in the right place! <br>
+                    Browse the works of David Bowie, 1970-1979, all on one site.
+                    <img id="welcome_banner" alt="Banner image of David Bowie" src="https://project-nerd.com/wp-content/uploads/2016/01/david-bowie-2-facebook-cover-timeline-banner-for-fb.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="popular">
+                    Start with Bowie's best...
+                </div>
+                <div>
+                    <div class="row" id="putithere">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+
+{% endblock %}
+
+

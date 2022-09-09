@@ -1,0 +1,260 @@
+.album{
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+#body{
+    background-color: #F2F2F2;
+}
+
+#navbar{
+    background: rgba(255, 204, 51, 0.8) !important;
+    /* background: rgba(217, 103, 22, 0.8) !important; */
+}
+
+#add{
+    margin-right: 25px;
+}
+
+#add_header{
+    font-size: 48px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.potential_song{
+    background-color: lightgrey;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 2px;
+    height: 25px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.err{
+    color: red;
+}
+
+#announce{
+    padding-top: 15px;
+}
+
+.success{
+    font-size: 24px !important;
+}
+
+.add_highlight{
+    background-color: rgba(255, 95, 31, 0.75)! important;
+}
+
+.ui-dialog-titlebar {
+    background: rgba(255, 95, 31, 0.75)! important;
+}
+
+
+.no-close .ui-dialog-titlebar-close {
+    display: none;
+}
+
+#yes{
+    margin-top: 5px;
+}
+
+#welcome_header{
+    font-size: 60px;
+}
+
+#year{
+    width: 50px;
+}
+
+#rating{
+    width: 50px;
+}
+
+#add_song{
+    margin-right: 15px;
+}
+
+#submit_entry{
+    background-color: rgba(255, 95, 31, 0.75)! important;
+    border-color: rgba(255, 95, 31, 0.3) !important;
+
+    /* background: rgba(255, 204, 51, 0.8) !important;
+    border-color: rgba(255, 204, 51, 0.4); */
+}
+
+#welcome_cont{
+    margin-top: 15px;
+}
+
+.welcome_img{
+    width: 100%;
+    height: auto;
+}
+
+#welcome_banner{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.welcome_title{
+    font-weight: 500;
+    margin-bottom: -10px;
+    padding-top: 10px;
+}
+
+#welcome_blurb{
+    font-size: 20px;
+    color: 	#404040;
+}
+
+#popular{
+    margin-top: 40px;
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #282828;
+}
+
+#search_bam{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.search_res{
+    font-size: 28px;
+    margin-top: 25px;
+}
+
+.search_album{
+    margin-bottom: 0px !important;
+}
+
+.search_name{
+    font-size: 18px;
+}
+
+.search_song{
+    padding-left: 20px;
+    font-weight: 300;
+}
+
+.search_spacer{
+    margin-bottom: 10px;
+}
+
+mark{
+    padding: 0px;
+    background-color: rgba(255, 91, 31);
+}
+
+.view_container{
+    margin-top: 15px;
+}
+
+.view_hero{
+    background-color: red;
+}
+
+.view_img {
+    width: 100%;
+    height: auto;
+}
+
+.view_title {
+    font-weight: bold;
+    font-size: 44px;
+}
+
+.view_header{
+    margin-bottom: 30px;
+}
+
+.view_rating_title{
+    font-size: 24px;
+    color: 	#404040;
+}
+
+.view_rating_num{
+    font-size: 60px;
+    color: #282828;
+    font-weight: 200;
+}
+
+.view_description{
+    margin-top: 20px;
+    color: 	#404040;
+}
+
+.view_recommended_title{
+    font-size: 24px;
+    color: 	#404040;
+    margin-bottom: 5px;
+}
+
+.view_recommended {
+    padding-left: 20px;
+}
+
+.view_recommended_item{
+    font-size: 18px;
+    color: #101010;
+    /* font-weight: 300; */
+}
+
+.view_year_title {
+    font-size: 24px;
+    color: 	#404040;
+}
+
+.view_year_num{
+    font-size: 60px;
+    color: #282828;
+    font-weight: 200;
+}
+
+#arrows{
+    margin-top: 20px;
+    color: 	#404040;
+}
+
+#next{
+    margin-left: 10px;
+    background-color: rgba(255, 95, 31, 0.75)! important;
+    border-color: rgba(255, 95, 31, 0.3) !important;
+    /* background-color: rgba(217, 103, 22, 0.6) !important;
+    border-color: rgba(217, 103, 22, 0.3) !important; */
+}
+
+#prev{
+    background-color: rgba(255, 95, 31, 0.75)! important;
+    border-color: rgba(255, 95, 31, 0.3) !important;
+    /* background-color: rgba(217, 103, 22, 0.6) !important;
+    border-color: rgba(217, 103, 22, 0.3) !important; */
+    margin-left: 5px;
+}
+
+#view_edit_link{
+    color: 	#404040;
+}
+
+
+
+
+
+

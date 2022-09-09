@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'add.js') }}"></script>
+
+<div class="fluid_container">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="announce">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div id="add_header">
+                Add a new entry to the wiki
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+                <label for="title">Title:</label><br>
+                <input type="text" id="title" name="title" placeholder="Title..."><br><br>
+
+                <label for="image">Link to album cover:</label><br>
+                <input type="text" id="image" name="image" size="50" placeholder="https://..."><br><br>
+
+                <label for="year">Year:</label><br>
+                <input type="number" id="year" name="year" placeholder="1975"><br><br>
+
+                <label for="rating">Rating:</label><br>
+                <input type="number" id="rating" name="rating" placeholder="0-10"><br><br>
+
+                <label for="hits">Recommended Songs (click song to remove):</label><br>
+                <input type="text" id="hits" name="hits" placeholder="Song name...">
+                <button id="add_song">Add Song</button><span id="potentials"></span><br><br>
+
+                <label for="desc">Description:</label><br>
+                <textarea id="desc" name="desc" cols="100" rows="5" placeholder="Description..."></textarea><br><br>
+
+                <input type="submit" value="Submit" id="submit_entry">
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
